@@ -1,20 +1,19 @@
-package tests;
+package java.tests;
 
 import io.qameta.allure.restassured.AllureRestAssured;
 import lombok.Data;
-import models.lombok.LoginBodyLombokModel;
-import models.lombok.LoginResponseLombokModel;
-import models.pojo.LoginBodyModel;
-import models.pojo.LoginResponsePojoModel;
+import java.models.lombok.LoginBodyLombokModel;
+import java.models.lombok.LoginResponseLombokModel;
+import java.models.pojo.LoginBodyModel;
+import java.models.pojo.LoginResponsePojoModel;
 import org.junit.jupiter.api.Test;
 
-import static helpers.CustomApiListener.withCustomTemplates;
 import static io.restassured.RestAssured.given;
 import static io.restassured.http.ContentType.JSON;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.hamcrest.Matchers.is;
-import static specs.LoginSpecs.loginRequestSpec;
-import static specs.LoginSpecs.loginResponseSpec;
+import static java.specs.LoginSpecs.loginRequestSpec;
+import static java.specs.LoginSpecs.loginResponseSpec;
 
 public class ReqresInExtendedTests {
 

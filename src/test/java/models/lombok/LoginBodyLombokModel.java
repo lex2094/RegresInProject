@@ -1,4 +1,4 @@
-package models.lombok;
+package java.models.lombok;
 
 import lombok.Data;
 
